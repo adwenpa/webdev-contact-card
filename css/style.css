@@ -1,0 +1,86 @@
+@import url("reset.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 525px;
+    
+  }
+
+  .person, 
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  address,
+  .Name-and-Title,
+  .Email-Phone {
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: blanchedalmond;
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+
+  img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  
+
+
+@media only screen and (min-width: 500px) {
+    .flex-container {
+      width: 500px;
+      height: 525px;
+      
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: row;
+      width: 500px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+   
+    .flex-container {
+      flex-direction: row;
+      width: 768px;
+      height: 525px;
+      justify-content: flex-start;
+      
+    }
+
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      width: 360px;
+      padding: 10px;
+      justify-content: start;
+      align-items: center;
+    }
+}
